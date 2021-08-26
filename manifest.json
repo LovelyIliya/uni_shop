@@ -68,5 +68,25 @@
     "uniStatistics" : {
         "enable" : false
     },
-    "vueVersion" : "2"
+    "vueVersion" : "2",
+		
+		"h5": {
+			"devServer": {
+				"https": false,
+				"port": 8080,
+				"proxy": {
+					"/apis": {
+						"target": "https://api.apiopen.top",
+						"changeOrigin": true,
+						"secure": false,
+						"pathRewrite": {
+							"^/apis": ""
+						}
+					}
+				}
+			}
+		}
 }
+
+
+

@@ -1,13 +1,50 @@
 {
   "pages": [
-    "pages/index/index"
+    "pages/index/index",
+    "pages/cart/cart",
+    "pages/member/member",
+    "pages/news/news",
+    "pages/goods/goods",
+    "pages/contact/contact",
+    "pages/categories/categories",
+    "pages/news/news-detail",
+    "pages/goods-detail/goods-detail"
   ],
   "subPackages": [],
   "window": {
-    "navigationBarTextStyle": "black",
-    "navigationBarTitleText": "uni-app",
-    "navigationBarBackgroundColor": "#F8F8F8",
+    "navigationBarTextStyle": "white",
+    "navigationBarTitleText": "uni商城",
+    "navigationBarBackgroundColor": "#b50e03",
     "backgroundColor": "#F8F8F8"
+  },
+  "tabBar": {
+    "selectedColor": "#b50e03",
+    "list": [
+      {
+        "text": "首页",
+        "pagePath": "pages/index/index",
+        "iconPath": "static/icon/shouye.png",
+        "selectedIconPath": "static/icon/shouye--active.png"
+      },
+      {
+        "text": "资讯",
+        "pagePath": "pages/news/news",
+        "iconPath": "static/icon/zixun.png",
+        "selectedIconPath": "static/icon/zixun--active.png"
+      },
+      {
+        "text": "购物车",
+        "pagePath": "pages/cart/cart",
+        "iconPath": "static/icon/gouwuche.png",
+        "selectedIconPath": "static/icon/gouwuche-active.png"
+      },
+      {
+        "text": "我的",
+        "pagePath": "pages/member/member",
+        "iconPath": "static/icon/wode1.png",
+        "selectedIconPath": "static/icon/wode1-active.png"
+      }
+    ]
   },
   "usingComponents": {},
   "sitemapLocation": "sitemap.json"
